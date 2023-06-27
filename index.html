@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess-color</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="color.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="modal">
+        <div class="window">
+            <p>Guess the correct <strong>color</strong>, the further the more difficult</p>
+            <button class="start">Start!</button>
+        </div>
+    </div>
+    <main class="blur">
+        <div class="main_table">
+            <ul>
+                <li><span>Time</span><br>
+                    <strong id="timer">-</strong>
+                </li>
+                <li><span>Round</span><br>
+                <strong><span class="round">1</span>/<span>10</span></strong></li>
+                <li><span>Score</span><br>
+                    <strong class="score">0</strong></li>
+            </ul>
+        </div>
+        <div class="main_container">
+            <p>What color is this?</p>  
+        </div>
+        <div class="main_colors">
+            <ul>
+                <li class="circles"> </li>
+                <li class="circles"></li>
+                <li class="circles"></li>
+                <li class="circles"></li>
+            </ul>
+        </div>
+    </main>
+    <div class="modal_end">
+        <div class="window_end">
+            <p class="window_end__text"><strong><span>Score :</span><span class="end_score"></span></strong></p>
+            <button class="again">Play again!</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
