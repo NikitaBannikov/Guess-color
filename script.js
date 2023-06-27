@@ -11,6 +11,7 @@ const circles=document.querySelectorAll('.circles')
 let score=0;
 let time=50,reStart=time;
 let round=1;
+let minus=0;
 
 let numBlocks = 4;
 let colors = [];
@@ -69,12 +70,14 @@ function setupSquares() {
         circles[i].addEventListener("click", function() {
             let clickedColor = this.style.background;//цвет кружка
             if(clickedColor == pickedColor) {
-                score+=10;
+                score+=(10+minus);
                 // changeColors(clickedColor)
                 plusRound()  
                 reset();  
                 Restart();
+                minus=0
             } else {
+                minus-=2
                 cont.style.border='1vw solid red'
                 setTimeout(function(){
                     cont.style.border='none'
